@@ -1,0 +1,12 @@
+body {
+  background: #e9e9ee;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-intro {
+  font-size: 32px;
+  font-weight: 700;
+}

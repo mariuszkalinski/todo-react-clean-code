@@ -1,7 +1,9 @@
 import { ITodo, Todo } from './todo';
 
 export class TodoList {
-  public todos: ITodo[];
+  constructor(
+    public todos: ITodo[],
+  ) {}
 
   public addTodo (
     title: string,
@@ -9,12 +11,12 @@ export class TodoList {
   ) {
     const id = new Date().valueOf();
     const currentTodo = new Todo(
-      description,
       title,
+      description,
       id,
     )
 
-    this.todos.push(currentTodo)
+    this.todos = [...this.todos, currentTodo];
   }
 
   public removeTodo (id: number) {
