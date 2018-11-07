@@ -5,8 +5,8 @@ import { TodoInteractor } from '../../useCases/todoInteractor';
 
 const initialState = new TodoList([
   new Todo(
-    '3.2% fat',
     'buy milk',
+    '3.2% fat',
     1,
   ),
 ]);
